@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Aleksandar Djukic</title>
+    <script src="https://kit.fontawesome.com/07ea4034d1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="./assets/img/icon.png" />
+</head>
+<body>
+    <section id="intro">
+    <nav id="nav">
+        <ul>
+            <li>
+                <div class="nav-name">Aleksandar <strong>Djukic</strong></div>
+            </li>
+            <li class="second-item">
+                <div class="nav-menu">
+                    <a id="intro-link" class="active-item" onclick="navControlScroll('intro-link','intro')">Home</a> 
+                    <a id="services-link"  onclick="navControlScroll('services-link','services')">Services</a> 
+                    <a id="about-link"  onclick="navControlScroll('about-link','about')">Contact</a> 
+                    <a id="projects-link"  onclick="navControlScroll('projects-link','projects')">Projects</a> 
+                </div>
+            </li>
+            <li class="last-item">
+                <div class="nav-contact">
+                    <div class="nav-social">
+                        <a href="" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </div>
+                    <div class="nav-mail">
+                        <a href=""><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-icon" id="openMenu">
+              <i class="fas fa-caret-square-down"></i>
+            </li>
+        </ul> 
+    </nav>
+    <nav id="nav-mobile">
+        <ul>
+            <li>
+                <div class="nav-name">Aleksandar <strong>Djukic</strong></div>
+            </li>
+            <li class="second-item">
+                <div class="nav-menu">
+                    <a id="intro-link" class="active-item" onclick="navControlScroll('intro-link','intro')">Home</a> 
+                    <a id="services-link" class="active-item"   onclick="navControlScroll('services-link','services')">Services</a> 
+                    <a id="about-link" class="active-item"   onclick="navControlScroll('about-link','about')">Contact</a> 
+                    <a id="projects-link" class="active-item"   onclick="navControlScroll('projects-link','projects')">Projects</a> 
+                </div>
+            </li>
+            <li class="last-item">
+                <div class="nav-contact">
+                    <div class="nav-social">
+                        <a href="" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="" class="github"><i class="fab fa-github"></i>GitHub</a>
+                    </div>
+                    <div class="nav-mail">
+                        <a href=""><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-icon">
+              <i class="fas fa-window-close" id="closeMenu"></i>
+            </li>
+        </ul> 
+    </nav>
+      <div class="container">
+        <div class="header-anim">
+          <div class="animation-wrapper">
+            <div class="layered-animations">
+              <svg class="large shape" viewBox="0 0 96 96">
+                <defs>
+                  <linearGradient id="circleGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                    <stop stop-color="#373734" offset="0%"/>
+                    <stop stop-color="#242423" offset="50%"/>
+                    <stop stop-color="#0D0D0C" offset="100%"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="48" cy="48" r="28" fill-rule="evenodd" stroke-linecap="square" fill="url(#circleGradient)"/>
+              </svg>
+              <svg class="small shape color-red" viewBox="0 0 96 96">
+                <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square"/>
+              </svg>
+              <svg class="large shape" viewBox="0 0 96 96">
+                <defs>
+                  <linearGradient id="triangleGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                    <stop stop-color="#373734" offset="0%"/>
+                    <stop stop-color="#242423" offset="50%"/>
+                    <stop stop-color="#0D0D0C" offset="100%"/>
+                  </linearGradient>
+                </defs>
+                <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square" fill="url(#triangleGradient)"/>
+              </svg>
+              <svg class="x-small shape" viewBox="0 0 96 96">
+                <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square"/>
+              </svg>
+              <svg class="x-small shape" viewBox="0 0 96 96">
+                <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square"/>
+              </svg>
+              <svg class="small shape color-red" viewBox="0 0 96 96">
+                <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square"/>
+              </svg>
+              <svg class="large shape" viewBox="0 0 96 96">
+                <defs>
+                  <linearGradient id="rectGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                    <stop stop-color="#373734" offset="0%"/>
+                    <stop stop-color="#242423" offset="50%"/>
+                    <stop stop-color="#0D0D0C" offset="100%"/>
+                  </linearGradient>
+                </defs>
+                <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square" fill="url(#rectGradient)"/>
+              </svg>
+              <svg class="small shape color-red" viewBox="0 0 96 96">
+                <circle cx="48" cy="48" r="32" fill-rule="evenodd" stroke-linecap="square"/>
+              </svg>
+              <svg class="x-small shape" viewBox="0 0 96 96">
+                <circle cx="48" cy="48" r="32" fill-rule="evenodd" stroke-linecap="square"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+          <div class="welcome">
+              <div class="header-main">
+                  <div class="welcome-text">
+                      <div class="full-stack"><button>Full Stack Developer</button></div>
+                      <h3>Talk is cheap<br>Show me the code</h3>
+                      <p>
+                        <i class="fas fa-portrait"></i> Aleksandar Đukić<br>
+                        <i class="fas fa-map-marker"></i> Novi Sad, Serbia<br>
+                        <i class="fas fa-user-graduate"></i> VTS NS
+                      </p>
+                      <a href="#about">LET'S CHAT!</a>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section id="services">
+        <div class="container d-flex">
+            <div class="services-menu">
+                <div class="service-container">
+                    <i class="fas fa-code service-icon"></i>
+                    <h6 class="service-header">Front-End</h6>
+                    <p class="service-desc">Front-End Web Developer who is motivated to combine the art of design with the art of programming.</p>
+                    <p class="projects-no"><<!---->/Pixel perfect></p>
+                </div>
+                <div class="service-container">
+                    <i class="fas fa-network-wired service-icon"></i>
+                    <h6 class="service-header">Back-End</h6>
+                    <p class="service-desc">Detail-oriented with strong skills in multi-tasking and efficient management of day-to-day operations.</p>
+                    <p class="projects-no"><<!---->/Safety first></p>
+                </div>
+                <div class="service-container">
+                    <i class="fas fa-layer-group service-icon"></i>
+                    <h6 class="service-header">Fullstack</h6>
+                    <p class="service-desc">Ready to improve and combine frontend and backend knowledge.</p>
+                    <p class="projects-no"><<!----->/UX & server side> </p>
+                </div>
+            </div>
+            <div class="services-about">
+                <div class="test">
+                    <div class="animation-wrapper">
+                        <div class="sphere-animation">
+                          <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+                            <defs>
+                              <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
+                                <stop stop-color="#373734" offset="0%"/>
+                                <stop stop-color="#242423" offset="50%"/>
+                                <stop stop-color="#0D0D0C" offset="100%"/>
+                              </linearGradient>
+                            </defs>
+                            <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
+                            <path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
+                            <path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
+                            <path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+                            <path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
+                            <path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+                            <path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
+                            <path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
+                            <path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
+                            <path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
+                            <path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
+                            <path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
+                            <path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
+                            <path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
+                            <path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
+                            <path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+                            <path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
+                            <path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+                            <path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
+                            <path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
+                            <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
+                          </svg>
+                        </div>
+                      </div>
+                </div>
+                <p class="intro-text">Introduce</p>
+                <h4 class="hello-text">Hello! I'm Aleksandar Djukic</h4>
+                <p class="quote-text">Simplicity is the soul of efficiency.</p>
+                <p class="about-desc">
+                  After graduating in September, 2021 with a Bachelor’s Degree in Information Technology, I start search for first job. I have worked on a multitude of web projects with idea to improve my knowledge, now I am ready to prove myself in professional IT industry. I gained advanced knowledge in HTML, CSS, JS, PHP and MYSQL with great problem-solving skills combining many Web technologies.
+                </p>
+                <a href="#about"><button class="ghost-btn">CONTACT ME</button></a> 
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <span class="content"></span>
+        <div class="container d-flex">
+            <div class="contact-about">
+                <div class="contact-header">Hello world !</div>
+                <div class="contact-text">As a high school student, I felt a great interest in computer technology. Curiosity led me to research how computers work. After a few years, I gained advanced knowledge of computer hardware and basic knowledge of web development. I am a highly motivated programmer with a desire to improve my skills. I graduated from the higher education school of professional studies, I am now looking for a way to get the first job.</div>
+                <div class="about-img">
+                    <img src="./assets/img/images.png">
+                </div>
+            </div>
+            <div class="form-container">
+                <h3><<!---->You can find my contacts in my CV<!---->/></h3>
+                <a href="./Aleksandar_Đukić_CV.pdf" download><button class="download-btn" style="width:100%"><i class="fa fa-download"></i> Download</button></a>
+                
+                <p class="or">OR</p>
+                <hr>
+                <h3><<!---->Contact me directly<!---->/></h3>
+                <form class="contact-form" action="https://formspree.io/f/mdobngao" method="POST">
+                    <label for="name"><<!---->FullName<!---->/></label>
+                    <input name="name" type="text">
+                    <label for="_replyto"><<!---->YourEmail<!---->/></label>
+                    <input name="_replyto" type="email">
+                    <label for="message"><<!---->EnterMessage<!---->/></label>
+                    <textarea name="message"></textarea>
+                    <!--<label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload"></i> Upload file
+                    </label>
+                    <input id="file-upload" type="file"/>-->
+                    <input type="button" value="Send" >
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+      <div class="projects-content">
+        <div id="ambient" style="overflow:hidden; position:absolute; width:100%; height:100vh;"></div>
+        <div class="container">
+          <div class="project-menu">
+            <ul>
+              <li><p id="all-projects" class="project-active" onclick="activateProject('all-projects','all')">All</p></li>
+              <li><p id="backend-projects"  onclick="activateProject('backend-projects','back')">Backend</p></li>
+              <li><p id="frontend-projects"  onclick="activateProject('frontend-projects','front')">Frontend</p></li>
+              <li><p id="other-projects"  onclick="activateProject('other-projects','other')">Others</p></li>
+            </ul>
+          </div>
+          <div class="project-container">
+            <div class="row">
+              <div class="item project-1" id="back">
+                <h6>Web Shop</h6>
+                <p>User login registration, admin login, theme changing system, filters, sorting, simple analytics, creating, deleting, editing products, add to cart and more.<br><br>
+                  HTML, SCSS, JS, JQuery, PHP, MYSQL, Bootstrap, AJAX</p>
+              </div>
+              <div class="item project-2" id="back">
+                <h6>Travel agency</h6>
+                <p>Admin login, dynamical pages, creating, deleting, editing pages, reservation and more.<br><br>
+                  HTML, CSS, JQuery, PHP, MYSQL, Bootstrap</p>
+              </div>
+              <div class="item project-6" id="other">
+                <h6>Many smaller projects</h6>
+                <p>I have a solid knowladge in the following technologies<br><br>
+                  React, Typescript, API, ASP.NET, Linux, Python</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="item project-5" id="front">
+                <h6>Portfolio website</h6>
+                <p>I created portfolio website to present me to the public</p><br><br>
+                HTML, SCSS, Javascript</p>
+              </div>
+              <div class="item project-3" id="front">
+                <h6>Degital Marketing agency</h6>
+                <p>Fully responsive website made for practicing CSS.</p>
+                <br><br>
+                HTML, CSS, JQuery</p>
+              </div>
+              <div class="item project-4" id="front">
+                <h6>Modern React website</h6>
+                <p>Beautiful and modern website and modern website made using React </p><br><br>
+                React, CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/img/pc-background.png" class="background-pc">
+      <a href="#about">
+        <div class="contact-img">
+          <img src="./assets/img/contact.png">
+          <p>CONTACT ME</p>
+        </div>
+      </a>
+    </section>
+</body>
+<script  src="./js/nav.js"></script>
+<script  src="./js/ball.js"></script>
+<script  src="./js/sphere.js"></script>
+<script  src="./js/welcomeAnim.js"></script>
+<script  src="./js/projects.js"></script>
+<script  src="./js/bvambient.js"></script>
+<script  src="./js/activeProject.js"></script>
+
+
+</html>
